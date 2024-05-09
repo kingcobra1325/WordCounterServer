@@ -43,6 +43,7 @@ Upon a successful request, you should receive a response in the following format
 - Ensure that you have Python and pip installed on your system.
 - The application relies on external libraries (`requests` and `pytest-django`), so ensure they are installed.
 - This application may not work correctly if the specified URL is invalid or inaccessible.
+- A DeepL API account is required to be able to perform the JP to EN translation.
 
 ## Test Cases
 
