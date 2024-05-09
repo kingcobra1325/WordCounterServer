@@ -33,11 +33,10 @@ python manage.py runserver
 curl -X POST "http://localhost:8000/api/word-counter/" -H "Content-Type: application/json" -d '{"url": "https://example.com", "word": "domain"}'
 ```
 Upon a successful request, you should receive a response in the following format:
-
-*{
+`{
   "status": "ok",
   "count": 4
-}*
+}`
 
 ## Caveats
 
