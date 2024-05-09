@@ -34,10 +34,10 @@ curl -X POST "http://localhost:8000/api/word-counter/" -H "Content-Type: applica
 ```
 Upon a successful request, you should receive a response in the following format:
 
-```{
+*{
   "status": "ok",
   "count": 4
-```}
+}*
 
 ## Caveats
 
