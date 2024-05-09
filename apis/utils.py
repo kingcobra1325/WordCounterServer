@@ -1,15 +1,19 @@
-from commons.helpers import get_site_content, find_word_instances
+from commons.helpers import (
+    get_site_content,
+    find_word_instances,
+    translate_jp_to_en,
+    divide_string,
+)
+
 
 def get_word_count(word: str, url: str):
-    
-    site = get_site_content(url=url)
 
-    print(site)
-    # print(site.get_text())
-    # print(f"{word} is in {url}: {word in site.get_text(separator=' ')}")
+    content = get_site_content(url=url)
 
-    instances = find_word_instances(word=word, text=site)
-    
-    print(instances)
+    divided_content = divide_string(content)
+
+    translated_text = translate_jp_to_en(divided_content)
+
+    instances = find_word_instances(word=word, text=translated_text)
 
     return len(instances)
