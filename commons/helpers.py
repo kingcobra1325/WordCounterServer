@@ -4,6 +4,7 @@ import json
 
 from django.conf import settings
 
+
 def get_site_content(url: str):
     response = requests.get(url)
     response.encoding = "utf-8"
