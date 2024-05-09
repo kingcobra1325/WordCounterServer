@@ -30,7 +30,7 @@ python manage.py runserver
 
 5. **Access the Word Counter API via POST `http://localhost:8000/api/wordcount/`.**
 ```bash
-curl -X POST "http://localhost:8000/api/word-counter/" -H "Content-Type: application/json" -d '{"url": "https://example.com", "word": "domain"}'
+curl -X POST "http://localhost:8000/api/wordcount/" -H "Content-Type: application/json" -d '{"url": "https://example.com", "word": "domain"}'
 ```
 Upon a successful request, you should receive a response in the following format:
 `{
