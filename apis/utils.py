@@ -14,6 +14,6 @@ def get_word_count(word: str, url: str):
 
     translated_text = translate_jp_to_en(divided_content)
 
-    instances = find_word_instances(word=word, text=translated_text)
+    instances = find_word_instances(word=word, text=content)
 
     return len(instances)

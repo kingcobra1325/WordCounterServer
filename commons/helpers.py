@@ -4,12 +4,6 @@ import json
 
 from django.conf import settings
 
-from bs4 import BeautifulSoup
-from googletrans import Translator
-
-translator = Translator()
-
-
 def get_site_content(url: str):
     response = requests.get(url)
     response.encoding = "utf-8"
